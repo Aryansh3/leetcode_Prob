@@ -2,9 +2,8 @@ class Solution {
 public:
     int reverseDegree(string s) {
         int sum =0;
-        for(int i=s.length();i>0;i--){
-            sum += ('z'-s[i-1] +1)*i;
-        //  sum += reversed_num *i
+        for(int i =0; i<s.size();i++){
+            sum += ('z'-s[i] +1)*(i+1);
         }
         return sum;
     }
