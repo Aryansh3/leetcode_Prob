@@ -2,7 +2,6 @@
 
 class Solution {
 public:
-
     bool helper(vector<vector<char>>& grid,string s, int r, int c){
         int n_r= grid.size();
         int n_c= grid[0].size();
@@ -17,14 +16,12 @@ public:
             }
             s.pop_back();
         }
-
         if(r == n_r-1 && c==n_c-1){
             return s.empty();
         }
         return helper(grid, s, r, c+1) || helper(grid, s, r+1, c);
     }
     
-
     bool hasValidPath(vector<vector<char>>& grid) {
         int n_r= grid.size();
         int n_c = grid[0].size();
