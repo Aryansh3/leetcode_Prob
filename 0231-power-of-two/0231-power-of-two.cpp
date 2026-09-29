@@ -7,3 +7,6 @@ public:
         return (n & (n-1))==0;
     }
 };
+
+// return !(n & (n-1)); 
+// for that time complexity is 3 ms.
